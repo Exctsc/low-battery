@@ -3,4 +3,57 @@ body {
   background-color: #0d0d10;
   color: #f2f2f2;
   margin: 0;
+  overflow: hidden;
+}
+
+/* SCENES */
+
+/* every scene sits on top of each other and fills the screen */
+.scene {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1.5s;
+}
+
+/* the active scene is the only one you can see */
+.scene.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.time {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+h1,
+h2 {
+  font-size: 56px;
+  max-width: 900px;
+  margin: 10px 0;
+}
+
+.line {
+  font-size: 22px;
+  opacity: 0.8;
+}
+
+button {
+  font-size: 18px;
+  padding: 14px 28px;
+  margin-top: 30px;
+  width: fit-content;
+  cursor: pointer;
 }

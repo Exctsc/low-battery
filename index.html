@@ -8,8 +8,53 @@
 </head>
 <body>
 
-  <h1>Low Battery</h1>
-  <p>Coming soon.</p>
+  <!-- SCENES (only one is "active" at a time) -->
+  <main id="scenes">
+
+    <!-- 0. INTRO -->
+    <section class="scene active" id="intro">
+      <p class="time">Low Battery</p>
+      <h1>You start the week at 100%.</h1>
+      <p class="line">Everything you do costs battery.</p>
+      <button id="startBtn">Start the week</button>
+    </section>
+
+    <!-- 1. MONDAY -->
+    <section class="scene" id="monday">
+      <p class="time">Monday, 8:47 AM</p>
+      <h2>New week. Full battery.</h2>
+      <p class="line">Class at 9. Club meeting at 5. Shift at 7. You've got this.</p>
+    </section>
+
+    <!-- 2. MIDTERMS -->
+    <section class="scene" id="midterms">
+      <p class="time">Wednesday, 4:12 PM</p>
+      <h2>Two midterms. One lab. Everyone is "just checking in."</h2>
+      <p class="line">You keep answering. It keeps coming.</p>
+    </section>
+
+    <!-- 3. GROUP PROJECT -->
+    <section class="scene" id="group">
+      <p class="time">Friday, 10:30 PM</p>
+      <h2>The group chat has 147 unread messages.</h2>
+      <p class="line">Nobody has started the doc.</p>
+    </section>
+
+    <!-- 4. 2 AM -->
+    <section class="scene" id="late">
+      <p class="time">Sunday, 2:04 AM</p>
+      <h2>Still awake. Still going.</h2>
+      <p class="line">Why are you still going?</p>
+    </section>
+
+    <!-- 5. REST -->
+    <section class="scene" id="rest">
+      <p class="time">Monday, 8:47 AM</p>
+      <h2>Rest isn't a break from the work. It's how you get through it.</h2>
+      <p class="line">New week. You actually have something left this time.</p>
+    </section>
+
+  </main>
 
   <script src="js/script.js"></script>
 </body>
